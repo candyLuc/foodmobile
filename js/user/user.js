@@ -1,6 +1,10 @@
-$('.tx').on('tap',function(){
-	$('.tx_pop').css('display','block');
-})
-$('.cancel').on('tap',function(){
-	$('.tx_pop').css('display','none');
-})
+//可不要，只是我这里用于看效果，知道有两种状态。签约状态
+setInterval(function(){
+	if($('.dai').css('display')=='none'){
+		$('.dai').css('display','block');
+	    $('.yi').css('display','none');
+	}else{
+	    $('.yi').css('display','block');
+		$('.dai').css('display','none');
+	}
+},2000)
